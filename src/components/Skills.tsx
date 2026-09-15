@@ -13,7 +13,7 @@ export function Skills() {
         <h2 className="text-4xl font-bold md:text-5xl">Tech Stack</h2>
         <div className="mt-10 grid gap-6 md:grid-cols-4">
           {Object.entries(skills).map(([group, items]) => (
-            <div>
+            <div key={group}>
               <h3 key={group} className="text-xl font-bold">
                 {group}
               </h3>

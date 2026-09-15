@@ -72,8 +72,7 @@ export default function ContactForm() {
 
     setStatus("submitting");
 
-    const formElement = e.currentTarget;
-    const formData = new FormData(formElement);
+    const formData = new FormData(e.currentTarget);
     const encodedData = new URLSearchParams();
 
     formData.forEach((value, key) => {
@@ -83,9 +82,7 @@ export default function ContactForm() {
     try {
       const response = await fetch("/", {
         method: "POST",
-        headers: {
-          "Content-Type": "application/x-www-form-urlencoded",
-        },
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
         body: encodedData.toString(),
       });
 
@@ -312,7 +309,7 @@ export default function ContactForm() {
                 <path
                   className="opacity-75"
                   fill="currentColor"
-                  d="M4 12a8 0 018-8v4a4 4 0 00-4 4H4z"
+                  d="M4 12a8 8 0 018-8v4a4 4 0 00-4 4H4z"
                 />
               </svg>
               Sending...

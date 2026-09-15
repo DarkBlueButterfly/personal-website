@@ -56,7 +56,7 @@ function Home() {
             onClick={scrollToTop}
             aria-label="Back to top"
             title="Back to top"
-            className="fixed bottom-6 right-6 z-50 h-12 w-12 items-center justify-center rounded-full bg-white text-slate-950 shadow-lg hover:-translate-y-1 cursor-pointer"
+            className="fixed bottom-20 right-6 z-50 h-12 w-12 items-center justify-center rounded-full bg-white text-slate-950 shadow-lg hover:-translate-y-1 cursor-pointer"
           >
             {/* Back to Top */}
             <IoIosArrowUp className="text-4xl ml-1 pl-0.5" />
