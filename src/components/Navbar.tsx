@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { sections, useActiveSection } from "../hooks/useActiveSection";
 import ThemeToggle from "./ThemeToggle";
-import { PiButterflyDuotone } from "react-icons/pi";
 
 export const Navbar = () => {
   const { active, scrollToSection } = useActiveSection();
@@ -9,13 +8,17 @@ export const Navbar = () => {
 
   return (
     <nav className="fixed left-0 right-0 z-50 border-b border-white/10 backdrop-blur-md bg-blue-900 text-sky-300">
-      <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
+      <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4 h-20">
         <button
           onClick={() => scrollToSection("home")}
-          className="text-xl font-bold cursor-pointer"
+          className="text-xl font-bold cursor-pointer hover:bg-indigo-300 hover:animate-ping"
           title="Home"
         >
-          <PiButterflyDuotone className="text-5xl" />
+          <img
+            src="/favicon.png"
+            alt="Blue Butterfly"
+            className="hover:bg-blue-300 h-20 "
+          />
         </button>
 
         <div className="hidden sm:flex gap-2">

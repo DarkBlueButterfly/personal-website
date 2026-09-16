@@ -15,7 +15,7 @@ export const skills: Skills = {
     "Tailwind CSS",
     "styled-components",
   ],
-  Backend: ["Node.js", "Express", "Passport", "RESTful APIs"],
+  Backend: ["Node.js", "Express", "Passport", "REST APIs"],
   Database: ["PostgreSQL", "MySQL"],
   Tools: ["Git", "GitHub", "Linux", "Prisma ORM", "testing"],
 };

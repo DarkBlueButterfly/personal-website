@@ -1,6 +1,8 @@
 # Personal Website
 
-My personal website and portfolio
+My personal website and portfolio linking to featured projects and contact information with a contact form
+
+### 🔗 [Link](https://darkbluebutterfly.netlify.app/)
 
 ## Features
 
@@ -8,6 +10,7 @@ My personal website and portfolio
 - Scroll based active section highlighting
 - Dark/light mode
 - Fully responsive
+- Form submission with Netlify Forms
 
 ## Built With
 
