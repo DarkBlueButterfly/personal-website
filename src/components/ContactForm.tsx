@@ -102,7 +102,7 @@ export default function ContactForm() {
   if (status === "success") {
     return (
       <div
-        className="rounded-2xl border border-emerald-500/20 bg-em/10 p-8"
+        className="rounded-2xl border border-emerald-500/20 bg-em/10 p-8 mt-4"
         role="status"
         aria-live="polite"
       >
@@ -121,18 +121,19 @@ export default function ContactForm() {
               d="m5 12 4 4L19 6"
             />
           </svg>
+          <h2 className="text-xl font-semibold dark:text-white">
+            Message sent!
+          </h2>
         </div>
 
-        <h2 className="mt-5 text-xl font-semibold text-white">Message sent!</h2>
-
         <p className="mt-2 text-sm leading-6 text-zinc-400">
-          Thanks for reach out. I&apos;ll get back to you as soon as I can.
+          Thanks for reaching out. I&apos;ll get back to you as soon as I can.
         </p>
 
         <button
           type="button"
           onClick={() => setStatus("idle")}
-          className="mt-6 text-sm font-medium text-white underline underline-offset-4 transition hover:text-zinc-300"
+          className="mt-6 font-medium dark:text-white underline underline-offset-4 transition hover:text-indigo-600 dark:hover:text-indigo-300 cursor-pointer"
         >
           Send another message
         </button>
