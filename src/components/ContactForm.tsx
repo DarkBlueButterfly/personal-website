@@ -121,12 +121,11 @@ export default function ContactForm() {
               d="m5 12 4 4L19 6"
             />
           </svg>
-          <h2 className="text-xl font-semibold dark:text-white">
-            Message sent!
-          </h2>
         </div>
 
-        <p className="mt-2 text-sm leading-6 text-zinc-400">
+        <h2 className="text-xl font-semibold dark:text-white">Message sent!</h2>
+
+        <p className="mt-2 text-sm leading-6 dark:text-zinc-400">
           Thanks for reaching out. I&apos;ll get back to you as soon as I can.
         </p>
 
